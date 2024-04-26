@@ -1,0 +1,22 @@
+{
+    "name": "drudrudru/lab4",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Src\\": "core/Src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "drudrudru",
+            "email": "borisrasgard251@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.4 | ^8.0",
+        "illuminate/database": "^10.48",
+        "illuminate/events": "^10.48",
+        "twig/twig": "^3.0"
+    }
+}
