@@ -12,6 +12,8 @@ return new class extends Migration
             $table->id();
             $table->string('email', 255)->unique();
             $table->string('login', 255)->unique();
+            $table->string('role', 50);
+            $table->foreign("role")->references("role")->on("roles")->onDelete('cascade');
             $table->text('password');
             $table->timestamps();
         });

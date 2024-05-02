@@ -6,12 +6,12 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <nav>
-        <a href="/">Главная</a>
-        <a href="/signup">Регистрация</a>
-        <a href="/login">Вход</a>
+    <nav class="flex gap-5">
+        <a href="{{root}}">Главная</a>
+        <a href="{{root}}signup/">Регистрация</a>
+        <a href="{{root}}login/">Вход</a>
     </nav>
-    <div>
+    <div class="flex justify-center">
         {% block content %}{% endblock %}
     </div>
 </body>

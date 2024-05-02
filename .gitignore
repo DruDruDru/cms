@@ -2,3 +2,6 @@
 *.log
 .idea
 .vscode
+composer.lock
+composer.phar
+twigCache
