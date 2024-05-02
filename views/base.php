@@ -11,7 +11,7 @@
         <a href="{{root}}signup/">Регистрация</a>
         <a href="{{root}}login/">Вход</a>
     </nav>
-    <div class="flex justify-center">
+    <div class="flex justify-center items-center flex-col">
         {% block content %}{% endblock %}
     </div>
 </body>

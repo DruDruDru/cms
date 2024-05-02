@@ -2,9 +2,9 @@
 return [
     'driver' => 'mysql',
     'host' => 'localhost',
-    'database' => 'cms',
-    'username' => 'root',
-    'password' => '',
+    'database' => 'vtgeyxts_m4',
+    'username' => 'vtgeyxts',
+    'password' => 'RZddJa',
     'charset' => 'utf8',
     'collation' => 'utf8_unicode_ci',
     'prefix' => '',

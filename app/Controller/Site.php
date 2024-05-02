@@ -15,7 +15,7 @@ class Site
     public function __construct()
     {
         $this->loader = new FilesystemLoader(__DIR__ . '/../../views');
-        $this->twig = new Environment($this->loader/*, ['cache' => __DIR__ . '/../../twigCache']*/);
+    $this->twig = new Environment($this->loader/*, ['cache' => __DIR__ . '/../../twigCache']*/);
         $this->path = require __DIR__ . '/../../config/path.php';
         $this->twig->addGlobal('root', $this->path['root']);
     }
@@ -32,7 +32,7 @@ class Site
             $userData = $_REQUEST;
             $userData['password'] = password_hash($userData['password'], PASSWORD_DEFAULT);
 
-            if ($_FILES['file']['error'] === UPLOAD_ERR_OK) {
+            if (!$_FILES['file']['error']) {
 
                 $uploadDir = __DIR__ . '/../../media';
                 $uploadFile = $uploadDir . basename($_FILES['file']['name']) . $_FILES['file']['type'];

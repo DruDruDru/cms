@@ -1,4 +1,4 @@
 <?php
 return [
-    "root" => "/cms/" ?? "/"
+    "root" => "/"
 ];
